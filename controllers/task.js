@@ -60,9 +60,11 @@ module.exports = {
   toDoList: async (req, res) => {
     const toDoResult = await taskModel.find({ userId: req.userId });
     if (toDoResult.length == 0) {
-      res
-        .status(404)
-        .send({ code: 404, message: "To do items does not exist" });
+      res.send({
+        code: 404,
+        message: "To do items does not exist",
+        result: [],
+      });
     } else {
       res.status(200).send({
         code: 200,
