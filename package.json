@@ -17,5 +17,8 @@
   "description": "backend for todo list app",
   "main": "server.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": ">=14 <15"
+  }
 }
