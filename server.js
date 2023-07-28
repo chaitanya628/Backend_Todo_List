@@ -3,10 +3,8 @@ const mongoose = require("mongoose");
 const app = express();
 const port = 5000;
 const cors = require("cors");
-
-// const DB_URL="mongodb://localhost:27017/";
-const DB_URL =
-  "mongodb+srv://user:oOfVg4w3uyv2At6E@cluster0.elwsnav.mongodb.net/?retryWrites=true&w=majority";
+require("dotenv").config();
+const DB_URL = process.env.DB_URL;
 
 // Middleware
 app.use(express.json());
