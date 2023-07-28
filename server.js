@@ -11,6 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 //connect with DB
+mongoose.set("strictQuery", true);
 mongoose.connect(DB_URL, { dbName: "todo" }, (err) => {
   if (!err) {
     console.log("Connected to database");
