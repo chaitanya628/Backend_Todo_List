@@ -10,7 +10,7 @@
     "nodemon": "^3.0.1"
   },
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "name": "backend_todolist",
   "version": "1.0.0",
